@@ -8,6 +8,7 @@ class Profile(models.Model):
     name = models.CharField(max_length=40)
     mobile = models.CharField()
 
+
 class Worker(models.Model):
     user = models.OneToOneField (User)
     image = models.FileField(upload_to='profile_image')
