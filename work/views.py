@@ -15,8 +15,9 @@ def about_us():
 
 #############################
 
-def show_adv():
-    return True
+def show_adv(requset, pk):
+    adv = get_object_or_404(requset, pk)
+    return render (requset,'work/show_adv.html',{'adv':adv})
 
 def add_adv(requset, pk):
     if requset.method == 'POST':
@@ -45,8 +46,10 @@ def del_adv():
 
 ################
 
-def show_profile():
-    pass
+def show_profile(requset, pk):
+    profile = get_object_or_404(requset, pk)
+    return render (requset,'work/show_profile.html',{'profile':profile})
+
 def add_profile(requset,pk):
     if requset.method == 'POST':
         instance = Profile (user = 'user')
