@@ -27,7 +27,7 @@ def add_adv(requset, pk):
             form.save()
     else:
         form = AdvForm
-    return render (requset,add_adv.html,{"form":form})
+    return render (requset,'work/add_adv.html',{"form":form})
     return HttpResponseRedirect(reverse('show_adv'))
 
 def edit_adv(requset, pk):

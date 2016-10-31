@@ -19,5 +19,5 @@ from work import urls as work_urls
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r"^work/", include(work_urls)),
+    url(r'^work/', include(work_urls)),
 ]
