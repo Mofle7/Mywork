@@ -7,11 +7,13 @@
 <body>
 {% if advs %}
 {% for adv in advs %}
-<h3>{{profile.name}}</h3><br>
+<h3>{{adv.user.profile.name}}</h3><br>
 <p>{{adv.adv_text}}</p>
 {% endfor %}
 {% endif %}
 {% if workers %}
-{% for worker %}
+{% for worker in workers %}
+<h3>{{adv.user.profile.name}}</h3><br>
+<p>{{worker.worker_services}}</p>
 </body>
 </html>
