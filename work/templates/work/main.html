@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+{% if advs %}
+{% for adv in advs %}
+<h3>{{profile.name}}</h3><br>
+<p>{{adv.adv_text}}</p>
+{% endfor %}
+{% endif %}
+{% if workers %}
+{% for worker %}
+</body>
+</html>
