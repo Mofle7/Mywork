@@ -2,7 +2,8 @@ from django.shortcuts import render, get_object_or_404
 from django.forms import modelformset_factory
 from work.models import Adv, Profile, Worker
 from django.forms import ModelForm
-from django.http import HttpResponseRedirect, reverse
+from django.http import HttpResponseRedirect
+from django.urls import reverse
 
 def main(requset):
     advs = Adv.objects.all()
@@ -51,7 +52,7 @@ def del_adv():
 ################
 
 def show_profile(requset, pk):
-    profile = get_object_or_404(requset, pk)
+    profile = get_object_or_404(Profile, pk=pk)
     return render (requset,'work/show_profile.html',{'profile':profile})
 
 def add_profile(requset,pk):
