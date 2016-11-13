@@ -10,8 +10,8 @@ def main(requset):
     workers = Worker.objects.all()
     return render(requset,'work/main.html',{'advs':advs},{'workers':workers})
 
-def support():
-    pass
+def support(requset):
+    return render(requset,'work/support.html',)
 
 def about_us():
     pass
