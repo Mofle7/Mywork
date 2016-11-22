@@ -13,8 +13,8 @@ def main(requset):
 def support(requset):
     return render(requset,'work/support.html',)
 
-def about_us():
-    pass
+def about_us(requset):
+    return render(requset,'work/about.html',)
 
 #############################
 
@@ -43,7 +43,7 @@ def edit_adv(requset, pk):
             return HttpResponseRedirect(reverse('edit_adv'))
     else :
         form = AdvForm(instance=adv)
-    return render (requset,'edit_adv.html',{"form":form})
+    return render (requset,'work/edit_adv.html',{"form":form})
 
 
 def del_adv():
@@ -51,11 +51,11 @@ def del_adv():
 
 ################
 
-def show_profile(requset, pk):
+def show_profile(requset,pk):
     profile = get_object_or_404(Profile, pk=pk)
     return render (requset,'work/show_profile.html',{'profile':profile})
 
-def add_profile(requset,pk):
+def add_profile(requset):
     if requset.method == 'POST':
         instance = Profile (user = requset.user)
         form = ProfileForm(requset.POST, instance = instance)
@@ -64,7 +64,7 @@ def add_profile(requset,pk):
             return HttpResponseRedirect(reverse('show_profile'))
     else:
         form = ProfileForm()
-    return render (requset,'add_profile.html',{"form":form})
+    return render (requset,'work/add_profile.html',{"form":form})
 
 
 def edit_profile(requset, pk):
@@ -76,7 +76,7 @@ def edit_profile(requset, pk):
             return HttpResponseRedirect(reverse('show_profile'))
     else :
         form = ProfileForm(instance=profile)
-    return render (requset,'edit_profile.html',{"form":form})
+    return render (requset,'work/edit_profile.html',{"form":form})
 
 def del_profile():
     pass

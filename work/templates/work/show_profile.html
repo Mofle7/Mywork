@@ -1,14 +1,22 @@
+{% extends 'work/base.html' %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Profile</title>
+    <title>{% block title %}Profile{% endblock %}</title>
 </head>
 <body>
-<h1>{{worker.user.profile.name}}</h1><br>
-{{worker.image}}<br>
-{{worker.worker_services}}<br>
-{{worker.worker_experince}}<br>
-{{worker.pub_date}}<br>
+{% block about %}{% endblock %}
+{% block support %}{% endblock %}
+
+{% block show_adv %}{% endblock %}
+{% block advs %}{% endblock %}
+{% block profiles %}{% endblock %}
+
+    {% block form_profile_edit %}{% endblock %}
+    {% block form_profile_add %}{% endblock %}
+    {% block form_adv_edit %}{% endblock %}
+    {% block form_adv_add %}{% endblock %}
+
 </body>
 </html>

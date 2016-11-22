@@ -1,10 +1,22 @@
+{% extends 'work/base.html' %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>{% block title %}support{% endblock %}</title>
 </head>
 <body>
+{% block about %}{% endblock %}
+
+{% block show_profile %}{% endblock %}
+{% block advs %}{% endblock %}
+
+    {% block profiles %}{% endblock %}
+    {% block form_profile_edit %}{% endblock %}
+    {% block form_profile_add %}{% endblock %}
+    {% block form_adv_edit %}{% endblock %}
+    {% block form_adv_add %}{% endblock %}
+
     <h1>Supprot My Work</h1>
     <a href="Mywork@gmail.com"><img src="https://assets.ifttt.com/images/channels/6/icons/large.png" alt="E-Mail" style="width:50px;hight:50px;"></a>
     <a href="https://twitter.com/M0fle7"><img src="http://www.aljadeed.com/wp-content/uploads/2016/09/1.png" alt="Twitter" style="width:50px;hight:60px"></a>

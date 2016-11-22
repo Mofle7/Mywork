@@ -1,16 +1,17 @@
+{% extends 'work/base.html' %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Add New Advertise</title>
+    <title>{% block title %}Add New Advertise{% endblock %}</title>
 </head>
 <body>
-<form method="get" action="">
-
-
-    {{ form }}
-
-</form>
+{% block show_profile %}{% endblock %}
+{% block advs %}{% endblock %}
+{% block profiles %}{% endblock %}
+{% block form_profile_add %}{% endblock %}
+{% block form_adv_add %}{% endblock %}
+{% block form_adv_edit %}{% endblock %}
 
 </body>
 </html>
