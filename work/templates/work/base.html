@@ -79,7 +79,7 @@
           <div class="panel-body">
 
               {% for adv in advs %}
-              <h4 style="color:black;"><a href="{% url 'show_profile' adv.pk %}"><strong>{{adv.user}}</strong></a></h4><br>
+              <h4 style="color:black;"><a href="{% url 'show_profile' adv.pk %}"><strong>{{adv.user}}</strong></a></h4>
               <p>{{adv.adv_text}}</p><br>
               {% endfor %}
 
@@ -95,12 +95,12 @@
           <div class="media">
           <div class="media-left">
           <a href="#">
-          <img class="media-object" src="..." alt="...">
+          <img class="media-object" src="#" alt="#">
           </a>
           </div>
           <div class="media-body">
-          <h4 class="media-heading"><strong>Media heading</strong></h4>
-    ...
+          <h4 class="media-heading"><strong>{{profile.name}}</strong></h4>
+    lll
           </div>
           </div>
                 </div>
