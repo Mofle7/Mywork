@@ -3,17 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="005b406b-72a9-46ba-90e1-f7ff2d0850ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mywork/settings.py" afterPath="$PROJECT_DIR$/mywork/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mywork/urls.py" afterPath="$PROJECT_DIR$/mywork/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/work/apps.py" afterPath="$PROJECT_DIR$/work/apps.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/work/models.py" afterPath="$PROJECT_DIR$/work/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/work/templates/work/add_profile.html" afterPath="$PROJECT_DIR$/work/templates/work/add_profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/work/templates/work/base.html" afterPath="$PROJECT_DIR$/work/templates/work/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/work/templates/work/edit_adv.html" afterPath="$PROJECT_DIR$/work/templates/work/edit_adv.html" />
     </list>
     <list id="1141f7d5-b978-4bed-af30-d8246cecf954" name="New changelist" comment="" />
     <list id="9fe3cc8a-7b34-43b9-b352-6ad54ecb50aa" name="Mofle" comment="" />
     <list id="a2c1fd5a-3d7d-4019-a3ed-80b16d8e59f5" name="Apps Error" comment="" />
+    <list id="2320c068-5d03-4f6b-a06b-ab16b69b2a94" name="Acc" comment="" />
     <ignored path="mywork.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,8 +63,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mywork/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="61" column="33" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
+            <state relative-caret-position="1060">
+              <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -351,9 +345,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2454955" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2454955" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3275862" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -399,7 +393,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Friday 25,Nov" />
     <MESSAGE value="Friday 25,Nov Modefied" />
-    <option name="LAST_COMMIT_MESSAGE" value="Friday 25,Nov Modefied" />
+    <MESSAGE value="Apps Error" />
+    <option name="LAST_COMMIT_MESSAGE" value="Apps Error" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -774,8 +769,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mywork/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="61" column="33" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
+        <state relative-caret-position="1060">
+          <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
           <folding />
         </state>
       </provider>
