@@ -35,7 +35,7 @@
   <body>
 
 
-
+<div class="container">
       <!-- The justified navigation menu is meant for single line per list item.
            Multiple lines will require custom code not provided by Bootstrap. -->
 {% block navbar %}
@@ -44,9 +44,8 @@
         <nav>
           <ul class="nav nav-justified">
             <li class="active" style="color:black;"><a href="{% url 'main' %}" style="color:black;">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Downloads</a></li>
+            <li><a href="{% url 'add_adv' %}" style="color:black;">Add New Advertisement</a></li>
+
             <li><a href="{% url 'about_us' %}" style="color:black;">About</a></li>
             <li><a href="{% url 'support' %}" style="color:black;">Contact</a></li>
           </ul>
@@ -56,9 +55,9 @@
       <!-- Jumbotron -->
 {% block jum %}
       <div class="jumbotron" style="">
-        <h1>Welcome to "My Work"</h1>
-        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Get started today</a></p>
+        <h1></h1>
+        <p class="lead"></p><br/><br/><br/><br/><br/><br/>
+        <p><a class="btn btn-lg btn-success" href="{% url 'add_profile' %}" role="button">Sign up from here</a></p>
       </div>
         {% endblock %}
 
@@ -90,21 +89,22 @@
 
           {% endblock %}
 {% block profiles %}
-        <div class="col-md-4">
-            <div class="panel panel-primary">
-          <div class="media">
-          <div class="media-left">
-          <a href="#">
-          <img class="media-object" src="" alt="">
-          </a>
-          </div>
-          <div class="media-body">
-          <h4 class="media-heading"></h4>
+        <ul class="media-list">
+  <li class="media">
+    <div class="media-left">
+        {% for worker in workers %}
+      <a href="{% url 'show_profile' worker.pk %}">
+        <img class="media-object" src="{{ worker.image.url }}" alt="user image">
+      </a>
+        {% endfor %}
 
-          </div>
-          </div>
-                </div>
-        </div>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Name</h4>
+      Some
+    </div>
+  </li>
+</ul>
           {% endblock %}
 
 {% block show_profile %}

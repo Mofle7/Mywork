@@ -27,18 +27,40 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# Userena
+EMAIL_BACKEND = ['django.core.mail.backends.dummy.EmailBackend']
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'yourgmailaccount@gmail.com'
+EMAIL_HOST_PASSWORD = 'yourgmailpassword'
+
+AUTH_PROFILE_MODULE = ['UserenaBaseProfile','accounts.MyProfile']
+ANONYMOUS_USER_ID = -1
+USERENA_SIGNIN_REDIRECT_URL = '/accounts/%(username)s/'
+LOGIN_URL = '/accounts/signin/'
+LOGOUT_URL = '/accounts/signout/'
+AUTHENTICATION_BACKENDS = (
+    'userena.backends.UserenaAuthenticationBackend',
+    'guardian.backends.ObjectPermissionBackend',
+    'django.contrib.auth.backends.ModelBackend',
+)
+
 
 # Application definition
 
 INSTALLED_APPS = [
     'work.apps.WorkConfig',
+    'accounts.apps.AccountsConfig',
+    'bootstrap3',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    'django.contrib.sites.models.Site'
 ]
 
 MIDDLEWARE = [

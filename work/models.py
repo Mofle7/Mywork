@@ -3,10 +3,11 @@ from __future__ import unicode_literals
 from django.contrib.auth.models import User
 from django.db import models
 from django.forms import ModelForm
+from userena.models import UserenaBaseProfile
 
 
-class Profile(models.Model):
-    user = models.OneToOneField (User, verbose_name='User Profile')
+class Profile(models.Model,UserenaBaseProfile):
+    user = models.OneToOneField (User, unique=True, related_name='profile' ,verbose_name='User Profile')
     name = models.CharField('User Name',max_length=40)
     mobile = models.CharField('user Mobile',max_length = 10)
 

@@ -6,11 +6,18 @@
     <title>{% block title %}Add New Advertise{% endblock %}</title>
 </head>
 <body>
-{% block show_profile %}{% endblock %}
+{% block about %}{% endblock %}
+{% block support %}{% endblock %}
+
+
 {% block advs %}{% endblock %}
 {% block profiles %}{% endblock %}
-{% block form_profile_edit %}{% endblock %}
-{% block form_adv_add %}{% endblock %}
-{% block form_adv_edit %}{% endblock %}
+{% block show_adv %}{% endblock %}
+
+
+    {% block form_profile_edit %}{% endblock %}
+    {% block form_profile_add %}{% endblock %}
+    {% block form_adv_edit %}{% endblock %}
+    {% block form_adv_add %}{% endblock %}
 </body>
 </html>
