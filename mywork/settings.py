@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
 import os
+from userena.models import UserenaBaseProfile
+from mywork import accounts
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -36,7 +38,7 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'yourgmailaccount@gmail.com'
 EMAIL_HOST_PASSWORD = 'yourgmailpassword'
 
-AUTH_PROFILE_MODULE = ['UserenaBaseProfile','accounts.MyProfile']
+AUTH_PROFILE_MODULE = [UserenaBaseProfile,accounts.MyProfile]
 ANONYMOUS_USER_ID = -1
 USERENA_SIGNIN_REDIRECT_URL = '/accounts/%(username)s/'
 LOGIN_URL = '/accounts/signin/'
@@ -51,16 +53,19 @@ AUTHENTICATION_BACKENDS = (
 # Application definition
 
 INSTALLED_APPS = [
-    'work.apps.WorkConfig',
-    'accounts.apps.AccountsConfig',
-    'bootstrap3',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.sites.models.Site'
+    'django.contrib.sites',
+    'work.apps.WorkConfig',
+    'accounts.apps.AccountsConfig',
+    'bootstrap3',
+    'userena',
+    'guardian',
+    'easy_thumbnails',
 ]
 
 MIDDLEWARE = [

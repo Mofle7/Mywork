@@ -6,7 +6,7 @@ from django.forms import ModelForm
 from userena.models import UserenaBaseProfile
 
 
-class Profile(models.Model,UserenaBaseProfile):
+class Profile(UserenaBaseProfile):
     user = models.OneToOneField (User, unique=True, related_name='profile' ,verbose_name='User Profile')
     name = models.CharField('User Name',max_length=40)
     mobile = models.CharField('user Mobile',max_length = 10)
@@ -20,7 +20,7 @@ class Worker(models.Model):
 
 
 class Adv(models.Model):
-    user = models.ForeignKey(User, verbose_name='Advertise')
+    user = models.ForeignKey(User,verbose_name='Advertise')
     adv_text = models.TextField('Write Your Advertise')
     pub_date = models.DateTimeField(auto_now_add=True)
 
