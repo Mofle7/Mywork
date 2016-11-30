@@ -4,9 +4,7 @@
     <list default="true" id="005b406b-72a9-46ba-90e1-f7ff2d0850ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mywork/settings.py" afterPath="$PROJECT_DIR$/mywork/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mywork/urls.py" afterPath="$PROJECT_DIR$/mywork/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/work/models.py" afterPath="$PROJECT_DIR$/work/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/work/urls.py" afterPath="$PROJECT_DIR$/work/urls.py" />
     </list>
     <list id="1141f7d5-b978-4bed-af30-d8246cecf954" name="New changelist" comment="" />
     <list id="9fe3cc8a-7b34-43b9-b352-6ad54ecb50aa" name="Mofle" comment="" />
@@ -33,8 +31,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/work/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="5" column="45" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="45" />
+            <state relative-caret-position="36">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding>
                 <element signature="e#25#64#0" expanded="true" />
               </folding>
@@ -68,11 +66,10 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mywork/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+            <state relative-caret-position="268">
+              <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
               <folding>
-                <element signature="e#308#317#0" expanded="true" />
-                <element signature="e#538#600#0" expanded="false" />
+                <element signature="e#465#527#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -405,7 +402,8 @@
     <MESSAGE value="Friday 25,Nov Modefied" />
     <MESSAGE value="Apps Error" />
     <MESSAGE value="Acc" />
-    <option name="LAST_COMMIT_MESSAGE" value="Acc" />
+    <MESSAGE value="SECRET_KEY&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="SECRET_KEY&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -464,8 +462,7 @@
         <state relative-caret-position="2260">
           <caret line="113" column="15" selection-start-line="113" selection-start-column="15" selection-end-line="113" selection-end-column="15" />
           <folding>
-            <element signature="e#308#317#0" expanded="true" />
-            <element signature="e#538#600#0" expanded="false" />
+            <element signature="e#465#527#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -734,31 +731,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/work/urls.py">
+    <entry file="file://$PROJECT_DIR$/work/apps.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="45" column="15" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/templates/work/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -773,20 +751,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/work/apps.py">
+    <entry file="file://$PROJECT_DIR$/work/templates/work/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="248">
+          <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="45" column="15" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/work/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="5" column="45" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="45" />
+        <state relative-caret-position="36">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
             <element signature="e#25#64#0" expanded="true" />
           </folding>
@@ -795,11 +792,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mywork/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+        <state relative-caret-position="268">
+          <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
           <folding>
-            <element signature="e#308#317#0" expanded="true" />
-            <element signature="e#538#600#0" expanded="false" />
+            <element signature="e#465#527#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -6,10 +6,16 @@ from django.forms import ModelForm
 from userena.models import UserenaBaseProfile
 
 
+
 class Profile(UserenaBaseProfile):
-    user = models.OneToOneField (User, unique=True, related_name='profile' ,verbose_name='User Profile')
+    user = models.OneToOneField (User,
+                                unique=True,
+                                verbose_name='user',
+                                related_name='user_profile')
     name = models.CharField('User Name',max_length=40)
     mobile = models.CharField('user Mobile',max_length = 10)
+
+
 
 class Worker(models.Model):
     user = models.OneToOneField (User, verbose_name= 'Worker User')
@@ -19,10 +25,12 @@ class Worker(models.Model):
     creat_date = models.DateTimeField(auto_now_add=True)
 
 
+
 class Adv(models.Model):
     user = models.ForeignKey(User,verbose_name='Advertise')
     adv_text = models.TextField('Write Your Advertise')
     pub_date = models.DateTimeField(auto_now_add=True)
+
 
 
 
