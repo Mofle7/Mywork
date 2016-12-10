@@ -1,6 +1,9 @@
 from work import views
 from django.conf.urls import url
+from views import ProfileSignupForm
 
+
+urlpatterns = [
 url(r"^$",views.main ,name='main'),
 url(r"^support/$",views.support ,name='support'),
 url(r"^about/$", views.about_us, name='about_us'),
@@ -14,5 +17,6 @@ url(r"^profile/(?P<pk>\d+)/edit/$", views.edit_profile, name='edit_profile'),
 url(r"^profile/(?P<pk>\d+)/del/$", views.del_profile, name='del_profile'),
 url(r"^search/$", views.search_page, name='search_page'),
 url(r"^forget_password/$", views.forget_password, name='forget_password'),
-
+    url(r'^accounts/signup/$', 'userena.views.signup', {'signup_form': ProfileSignupForm, 'template_name': 'userena/profile_signup_form.html'}),
+]
 

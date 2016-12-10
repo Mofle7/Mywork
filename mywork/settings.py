@@ -37,7 +37,7 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'yourgmailaccount@gmail.com'
 EMAIL_HOST_PASSWORD = 'yourgmailpassword'
 
-AUTH_PROFILE_MODULE = 'accounts.Profile'
+AUTH_PROFILE_MODULE = 'work.Profile'
 ANONYMOUS_USER_ID = -1
 SITE_ID = 1
 USERENA_SIGNIN_REDIRECT_URL = '/accounts/%(username)s/'

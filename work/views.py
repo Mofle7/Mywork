@@ -4,6 +4,8 @@ from work.models import Adv, Profile, Worker
 from django.forms import ModelForm
 from django.http import HttpResponseRedirect
 from django.urls import reverse
+from userena.forms import SignupForm
+
 
 def main(requset):
     advs = Adv.objects.all()
@@ -104,6 +106,11 @@ class WorkerForm(ModelForm):
     class Meta:
         model = Worker
         fields = ['image','worker_services', 'worker_experince']
+
+class ProfileSignupForm(SignupForm):
+    class meta :
+        model = Profile
+        fields = ['name','mobile']
 
 # Create your views here.
 # Create your views here.

@@ -20,8 +20,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 
-
+urlpatterns=[
 url(r'^admin/', admin.site.urls),
 url(r'^work/', include(work_urls)),
 url(r'^accounts/', include('userena.urls')),
-+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

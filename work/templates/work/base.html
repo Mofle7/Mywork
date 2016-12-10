@@ -122,9 +122,10 @@
 <!-- Four Forms -->
 {% block form_profile_add %}
          <form method="post" action="">
-             {% csrf_token %}
-             {{ form }}
-         </form>
+            {% csrf_token %}
+            {{ form }}
+        <input type="submit" value="أرسل" >
+        </form>
         {% endblock %}
 
 {% block form_profile_edit %}
