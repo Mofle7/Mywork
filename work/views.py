@@ -29,8 +29,8 @@ def add_adv(requset):
         instance = Adv (user = requset.user)
         form = AdvForm(requset.POST, instance = instance)
         if form.is_valid :
-            form.save()
-            return HttpResponseRedirect(reverse('show_adv'))
+            adv = form.save()
+            return HttpResponseRedirect(reverse('show_adv',args=(adv.pk,)))
     else:
         form = AdvForm()
     return render (requset,'work/add_adv.html',{"form":form})

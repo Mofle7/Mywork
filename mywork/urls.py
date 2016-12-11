@@ -18,10 +18,14 @@ from django.contrib import admin
 from work import urls as work_urls
 from django.conf import settings
 from django.conf.urls.static import static
+from work.views import ProfileSignupForm
+from userena import views as userena_views
 
 
 urlpatterns=[
 url(r'^admin/', admin.site.urls),
-url(r'^work/', include(work_urls)),
+url(r'', include(work_urls)),
 url(r'^accounts/', include('userena.urls')),
+url(r'^signup/$', userena_views.signup,{'signup_form': ProfileSignupForm, 'template_name': 'userena/profile_signup_form.html'},name='signup'),
+
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
